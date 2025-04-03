@@ -1,4 +1,4 @@
-<style>
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -17,7 +17,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-</style>
+
 
 <div class="dropdown">
   <span>Mouse over me</span>
