@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site com Dropdown</title>
+    <title>Manual do Usuário</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu">
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Menu 1</a>
-                    <div class="dropdown-content">
-                        <a href="#">Opção 1</a>
-                        <a href="#">Opção 2</a>
-                        <a href="#">Opção 3</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Menu 2</a>
-                    <div class="dropdown-content">
-                        <a href="#">Opção A</a>
-                        <a href="#">Opção B</a>
-                    </div>
-                </li>
-            </ul>
+        <nav class="navbar navbar-light bg-light">
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ação
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Alguma ação</a>
+                    <a class="dropdown-item" href="#">Outra ação</a>
+                    <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Link separado</a>
+                </div>
+            </div>
         </nav>
     </header>
-    <script src="script.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
