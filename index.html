@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li a {
-  display: block;
-  width: 60px;
-  background-color: #dddddd;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <body>
 
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-
-<p>A background color is added to the links to show the link area.</p>
-<p>Notice that the whole link area is clickable, not just the text.</p>
-
+        <h2>Manual de Usuário</h2>
+        <p>Move the mouse over the button to open the dropdown menu.</p>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Manual</button>
+          <div class="dropdown-content">
+          <a href="#">Cadastro</a>
+          <a href="#">Financeiro</a>
+          <a href="#">Contabil</a>
+          </div>
+        </div>
+        
+        <p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
+        
 </body>
 </html>
-
-
