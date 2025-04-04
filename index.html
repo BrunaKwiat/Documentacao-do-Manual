@@ -1,32 +1,94 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual do Usuário</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Artigo com Links Internos</title>
+    <style>
+        /* CSS para estilizar a página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0047ab;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0047ab;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <body>
+    <header>
+        <h1>Artigo com Links Internos</h1>
+    </header>
 
-        <h2>Manual do Usuário</h2>
-        <p>Move the mouse over the button to open the dropdown menu.</p>
-        
-        <div class="dropdown">
-          <button class="dropbtn">Menu</button>
-          <div class="dropdown-content">
-          <a href="#">Cadastro</a>
-          <a href="cadastro" title="O que é Cadastro"
-          <a href="#">Financeiro</a>
-          <a href="#">Fiscal</a>
-          <a href="#">CRM</a>
-          <a href="#">Relatórios</a>
-         
-          
-          </div>
-        </div>
-        
-        <p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
-        
+    <nav>
+        <!-- Links que levam para as seções do artigo -->
+        <a href="#introducao">Introdução</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#conclusao">Conclusão</a>
+    </nav>
+
+    <main>
+        <!-- Seções do artigo -->
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Bem-vindo ao nosso artigo! Nesta seção, apresentamos uma visão geral sobre o tema abordado.</p>
+        </section>
+
+        <section id="conteudo">
+            <h2>Conteúdo</h2>
+            <p>Aqui está o conteúdo principal. Abordamos as informações mais importantes de forma clara e detalhada.</p>
+        </section>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+            <p>Obrigado por ler! Nesta seção, revisamos os principais pontos discutidos no artigo.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Artigo de Demonstração</p>
+    </footer>
+
+    <script>
+        // JavaScript para adicionar uma animação suave na rolagem
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
