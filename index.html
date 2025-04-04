@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestão</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="ez-toc-container" class="ez-toc-v2_0_72 ez-toc-wrap-center counter-hierarchy ez-toc-counter ez-toc-custom ez-toc-container-direction"> <div class="ez-toc-title-container"> <p class="ez-toc-title" style="cursor:inherit;">Conteúdo</p> <span class="ez-toc-title-toggle"></span></div> <nav><ul class="ez-toc-list ez-toc-list-level-1 "><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-1" href="#O_que_sao_os_links_HTML" title="O que são os links HTML">O que são os links HTML</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="#O_surgimento_dos_links_HTML" title="O surgimento dos links HTML">O surgimento dos links HTML</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-3" href="#Como_fazer_um_link_em_HTML" title="Como fazer um link em HTML">Como fazer um link em HTML</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-4" href="#Estilizando_o_link" title="Estilizando o link">Estilizando o link</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-5" href="#O_atributo_href" title="O atributo href">O atributo href</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-6" href="#O_atributo_target" title="O atributo target">O atributo target</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-7" href="#O_atributo_title" title="O atributo title">O atributo title</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-8" href="#Criando_ancoras_com_os_links_HTML" title="Criando âncoras com os links HTML">Criando âncoras com os links HTML</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-9" href="#Link_HTML_de_e-mail" title="Link HTML de e-mail">Link HTML de e-mail</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-10" href="#Link_HTML_e_o_atributo_download" title="Link HTML e o atributo download">Link HTML e o atributo download</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-11" href="#Base_link" title="Base link">Base link</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-12" href="#Links_HTML_em_imagens" title="Links HTML em imagens">Links HTML em imagens</a></li><li class="ez-toc-page-1 ez-toc-heading-level-2 nitro-offscreen"><a class="ez-toc-link ez-toc-heading-13" href="#Pratique_voce_mesmo" title="Pratique você mesmo">Pratique você mesmo</a></li></ul></nav></div>
-  <li class="ez-toc-page-1 ez-toc-heading-level-2"><a class="ez-toc-link ez-toc-heading-2" href="#O_surgimento_dos_links_HTML" title="O surgimento dos links HTML">O surgimento dos links HTML</a></li>
+    <header>
+        <h1>Sistema de Gestão</h1>
+    </header>
+
+    <!-- Índice -->
+    <div class="ez-toc-container">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#cadastro">Cadastro</a></li>
+            <li><a href="#financeiro">Financeiro</a></li>
+            <li><a href="#contabil">Contábil</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <section id="cadastro">
+            <h2>Cadastro</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="financeiro">
+            <h2>Financeiro</h2>
+            <p>Insira as informações financeiras.</p>
+            <form>
+                <label for="despesa">Despesa:</label>
+                <input type="number" id="despesa" name="despesa">
+                <br><br>
+                <label for="receita">Receita:</label>
+                <input type="number" id="receita" name="receita">
+                <br><br>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+
+        <section id="contabil">
+            <h2>Contábil</h2>
+            <p>Insira os registros contábeis abaixo:</p>
+            <form>
+                <label for="registro">Registro:</label>
+                <input type="text" id="registro" name="registro">
+                <br><br>
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema de Gestão</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
