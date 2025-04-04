@@ -1,45 +1,11 @@
 body {
-  margin: 0;
-  font-family: sans-serif;
-  display: flex;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
 }
 
-nav.ez-toc-container {
-  width: 200px;
-  background: #f2f2f2;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding: 1rem;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  margin-bottom: 10px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
-main {
-  margin-left: 220px;
-  padding: 2rem;
-  width: 100%;
-}
-
-section {
-  margin-bottom: 60px;
-}
-
-form input {
-  margin-right: 10px;
-  padding: 5px;
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
