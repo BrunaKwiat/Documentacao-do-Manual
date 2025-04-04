@@ -1,78 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu com Submenu</title>
-    <style>
-        /* Estilização básica do menu */
-        .menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: #333;
-        }
-
-        .menu > li {
-            position: relative;
-            display: inline-block;
-        }
-
-        .menu > li > a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        .menu > li > a:hover {
-            background-color: #575757;
-        }
-
-        /* Estilização do submenu */
-        .submenu {
-            display: none;
-            position: absolute;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color: #444;
-        }
-
-        .submenu li a {
-            display: block;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        .submenu li a:hover {
-            background-color: #575757;
-        }
-
-        /* Mostrar o submenu ao passar o mouse */
-        .menu > li:hover .submenu {
-            display: block;
-        }
-    </style>
+    <title>Manual do Usuário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul class="menu">
-        <li>
+    <body>
+
+        <h2>Manual do Usuário</h2>
+        <p>Move the mouse over the button to open the dropdown menu.</p>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+          <a href="caminho/novo-cadastro.html">Cadastro</a>
+          <li>
             <a href="#">Cadastro</a>
             <ul class="submenu">
                 <li><a href="novo-cadastro.html">Novo Cadastro</a></li>
                 <li><a href="editar-cadastro.html">Editar Cadastro</a></li>
             </ul>
         </li>
-        <li>
-            <a href="#">Configurações</a>
-            <ul class="submenu">
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="preferencias.html">Preferências</a></li>
-            </ul>
-        </li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
+          <a href="#">Financeiro</a>
+          <a href="#">Fiscal</a>
+          <a href="#">CRM</a>
+          <a href="#">Relatórios</a>
+         
+          
+          </div>
+        </div>
+        
+        <p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
+        
 </body>
 </html>
