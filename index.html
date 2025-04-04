@@ -1,37 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual do Usuário</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Manual de Usuários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #0047ab;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            margin-top: 20px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #0047ab;
+        }
+    </style>
 </head>
 <body>
-    <body>
-
-        <h2>Manual do Usuário</h2>
-        <p>Move the mouse over the button to open the dropdown menu.</p>
-        
-        <div class="dropdown">
-          <button class="dropbtn">Menu</button>
-          <div class="dropdown-content">         
-          <li>
-            <a href="#">Cadastro</a>
-            <ul class="submenu">
-                <li><a href="novo-cadastro.html">Novo Cadastro</a></li>
-                <li><a href="editar-cadastro.html">Editar Cadastro</a></li>
+    <header>
+        <h1>Manual de Usuários</h1>
+    </header>
+    <nav class="menu">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#como-usar">Como Usar</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>Bem-vindo ao manual de usuários! Aqui você encontrará todas as informações necessárias para usar nosso sistema.</p>
+        </section>
+        <section id="como-usar">
+            <h2>Como Usar</h2>
+            <p>Veja o passo a passo para navegar pelo sistema:</p>
+            <ol>
+                <li>Faça login com suas credenciais.</li>
+                <li>Navegue pelo menu superior para acessar as funcionalidades.</li>
+                <li>Consulte as opções de ajuda sempre que necessário.</li>
+            </ol>
+        </section>
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p>Aqui estão as perguntas mais frequentes dos usuários:</p>
+            <ul>
+                <li><strong>Como faço para recuperar minha senha?</strong> Vá para a página de recuperação de senha e siga as instruções.</li>
+                <li><strong>O sistema funciona em dispositivos móveis?</strong> Sim, o sistema é compatível com celulares e tablets.</li>
             </ul>
-        </li>
-          <a href="#">Financeiro</a>
-          <a href="#">Fiscal</a>
-          <a href="#">CRM</a>
-          <a href="#">Relatórios</a>
-         
-          
-          </div>
-        </div>
-        
-        <p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
-        
+        </section>
+    </main>
 </body>
 </html>
