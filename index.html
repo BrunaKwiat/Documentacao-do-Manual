@@ -2,49 +2,14 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Site de Cadastro, Financeiro e Contábil</title>
+  <title>Site com Link de Cadastro</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav id="toc" class="ez-toc-container">
-    <ul>
-      <li><a href="#cadastro">Cadastro</a></li>
-      <li><a href="#financeiro">Financeiro</a></li>
-      <li><a href="#contabil">Contábil</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="cadastro">
-      <h2>Cadastro</h2>
-      <form id="formCadastro">
-        <input type="text" id="nome" placeholder="Nome" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <button type="submit">Cadastrar</button>
-      </form>
-      <ul id="listaUsuarios"></ul>
-    </section>
-
-    <section id="financeiro">
-      <h2>Financeiro</h2>
-      <form id="formFinanceiro">
-        <input type="text" id="descricao" placeholder="Descrição" required>
-        <input type="number" id="valor" placeholder="Valor (positivo ou negativo)" required>
-        <button type="submit">Adicionar</button>
-      </form>
-      <ul id="listaFinanceiro"></ul>
-      <p>Total: R$ <span id="total">0.00</span></p>
-    </section>
-
-    <section id="contabil">
-      <h2>Contábil</h2>
-      <div id="relatorioContabil">
-        <p>Entradas: <span id="entradas">R$ 0.00</span></p>
-        <p>Saídas: <span id="saidas">R$ 0.00</span></p>
-        <p>Saldo Final: <span id="saldoFinal">R$ 0.00</span></p>
-      </div>
-    </section>
-  </main>
+  <header>
+    <h1>Bem-vindo ao Site</h1>
+    <button id="btnCadastro">Ir para Cadastro</button>
+  </header>
 
   <script src="script.js"></script>
 </body>
